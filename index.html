@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Encriptador</title>
+  </head>
+  <body>
+    <figure class="content-img">
+      <img src="img/Vector.png" alt="logo" />
+    </figure>
+    <main class="main">
+      <div>
+        <textarea
+          id="textoDesencriptado"
+          placeholder="Ingrese el Texto aquí"
+          class="content-text"
+        ></textarea>
+        <div class="exclamation">
+          <span>!</span>
+          <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+        <div class="btn-box">
+          <button id="btnEncriptar" class="btn-one" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button id="btnDesencriptar" class="btn-two" onclick="desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="result-box">
+        <figure class="img-muñeca"><img src="img/Muñeco.png" alt="" /></figure>
+        <textarea
+          name="resultado"
+          id="textoEncriptado"
+          cols="30"
+          rows="10"
+          class="texto-encriptado"
+          placeholder="Ningun mensaje fue encontrado"
+        ></textarea>
+        <h2 class="mensaje-one">Ningun Mensaje fue encontrado</h2>
+        <p class="mensaje-two">
+          Ingresa el texto que desees encriptar o desencriptar
+        </p>
+        <button id="btnCopy" class="btn-copy" onclick="copyTextEncriptado()">
+          Copiar
+        </button>
+      </div>
+    </main>
+    <h1>Developed By: JAIME ROBINSON CHICO LOAYZA</h1>
+  </body>
+
+  <script src="app.js"></script>
+</html>
